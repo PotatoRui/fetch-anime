@@ -15,8 +15,8 @@ function App() {
           <Route exact path="/">
             <Redirect to="/list/2020/spring" />
           </Route>
-          <Route path="/list/genres/:genre/:type/:page" component={List} />
-          <Route path="/list/:year/:season" component={List} />
+          <Route exact path="/list/genres/:genre/:type/:page" component={List} />
+          <Route exact path="/list/:year/:season" component={List} />
           <Route path="*">
             <Redirect to="/list/2020/spring" />
           </Route>
